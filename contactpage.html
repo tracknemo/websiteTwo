@@ -32,7 +32,16 @@
     <!-- User style -->
     <link rel="stylesheet" href="css/custom.css">
     
+            <style type="text/css"> 
+              .mobileShow {display: none;} 
 
+              /* Smartphone Portrait and Landscape */ 
+              @media only screen 
+                and (min-device-width : 320px) 
+                and (max-device-width : 480px){ 
+                  .mobileShow {display: inline;}
+              }
+            </style>
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -79,8 +88,19 @@
                     </div>
                                                                     <!-- End MAinmenu Ares -->
 
-                    <div class="mobile-menu-area"></div>
-                </div>
+                    <div class="mobileShow">
+                        <ul class="main__menu">
+                        <nav id="mobile_dropdown">
+                                    <ul>
+                                        <li><a href="index.html">HOME</a>
+                                        </li>
+                                        <li><a href="work.html">WORK</a></li>
+                                        <li><a href="projects.html">PROJECTS</a></li>
+                                        <li><a href="contactpage.html">CONTACT</a></li>
+                                    </ul>
+                                </nav>
+                        </ul>
+                    </div>                </div>
             </div>
             <!-- End Mainmenu Area -->
         </header>
