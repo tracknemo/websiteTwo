@@ -43,6 +43,16 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style type="text/css"> 
+  .mobileShow {display: none;} 
+
+  /* Smartphone Portrait and Landscape */ 
+  @media only screen 
+    and (min-device-width : 320px) 
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+</style>
 </head>
 
 <body>
@@ -68,18 +78,17 @@
                                     <li class="drop"><a href="index.html">HOME</a></li>
                                     <li class="drop"><a href="work.html">WORK</a></li>
                                     <li class="drop"><a href="projects.html">PROJECTS</a></li>
-                                    <li class="drop"><a href="#">CONTACT</a></li>
+                                    <li class="drop"><a href="contactpage.html">CONTACT</a></li>
                                 </ul>
                             </nav>
-                            <div class="mobile-menu clearfix d-none">
+                            <div class="mobileShow">
                                 <nav id="mobile_dropdown">
                                     <ul>
                                         <li><a href="index.html">HOME</a>
                                         </li>
                                         <li><a href="work.html">WORK</a></li>
                                         <li><a href="projects.html">PROJECTS</a></li>
-                                        <li><a href="#">CONTACT</a></li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="contactpage.html">CONTACT</a></li>
                                     </ul>
                                 </nav>
                             </div>                          
@@ -87,22 +96,19 @@
                     </div>
                                                                     <!-- End MAinmenu Ares -->
 
-                          <div class="mobile-menu-area">
+                    <div class="mobileShow">
+                        <ul class="main__menu">
                         <nav id="mobile_dropdown">
                                     <ul>
                                         <li><a href="index.html">HOME</a>
                                         </li>
                                         <li><a href="work.html">WORK</a></li>
                                         <li><a href="projects.html">PROJECTS</a></li>
-                                        <li><a href="#">CONTACT</a></li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="contactpage.html">CONTACT</a></li>
                                     </ul>
                                 </nav>
+                        </ul>
                     </div>
-                    
-                    
-                    
-                    
                 </div>
             </div>
             <!-- End Mainmenu Area -->
@@ -111,7 +117,16 @@
         <div class="body__overlay"></div>
         <!-- Start Offset Wrapper -->
                 <ul class="main__menu">
-                                     <video playsinline style="display:block; margin: 0 auto; width: 100%" controls autoplay muted> 
+
+
+
+<!--
+                <video width="1280" height="720" style="display:block; margin: 0 auto;" controls autoplay muted> 
+       <source src="SmallerIntro.mp4" type="video/mp4">
+
+            </video>
+-->
+                            <video playsinline style="display:block; margin: 0 auto; width: 100%" controls autoplay muted> 
        <source src="SmallerIntro.mp4" type="video/mp4">
 
             </video>
